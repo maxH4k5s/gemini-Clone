@@ -1,0 +1,269 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --sc-clr: #D55D69;
+    --lt-clr: #1E1F20;
+    --xlt-clr: #454646;
+    --bg-clr: #131314;
+    --lt-font: #676666;
+    --bg-drk: #1B1B1C;
+    --big-font: 16px;
+    --med-font: 14px;
+    --small-font: 12px;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg-clr);
+    display: flex;
+    color: white;
+}
+
+.sidebar {
+    width: 20%;
+    background-color: var(--lt-clr);
+    height: 100vh;
+    padding-left: 20px;
+    padding-top: 20px;
+    position: fixed;
+}
+
+
+aside .row {
+
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.row .menu {
+    font-size: 20px;
+}
+
+.newChat button {
+    padding: 12px 14px;
+    border-radius: 20px;
+    font-size: 15px;
+    background-color: var(--bg-drk);
+    color: #676666;
+    border: none;
+    outline: none;
+}
+
+
+.container {
+    width: 80%;
+    height: 100vh;
+    position: relative;
+    left: 20%;
+}
+
+.nav {
+    width: 100%;
+    padding: 20px;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container .nav .superTag {
+    width: 260px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.container .nav .superTag .tryPremium {
+    width: 190px;
+    padding: 3px 7px;
+    font-weight: 600;
+    background-color: var(--xlt-clr);
+    color: #fff;
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.container .nav .superTag .tryPremium img {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+}
+
+
+.logo h3 {
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.recents ul {
+    list-style-type: none;
+    line-height: 2.2;
+}
+
+.recents {
+    margin-top: 18px;
+}
+
+.recents h4 {
+    font-size: var(--med-font);
+    font-weight: 600;
+}
+
+.recents ul li {
+    font-family: var(--med-font);
+    color: #C5C6C5;
+    font-weight: 500;
+}
+
+.recents ul li:nth-last-child(1) {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 2.6;
+    cursor: pointer;
+}
+
+.help {
+    margin-top: 140px;
+    display: inline-block;
+}
+
+.help ul {
+    list-style-type: none;
+    font-weight: 600;
+    font-size: var(--med-font);
+    line-height: 2.5;
+}
+
+.help .addrs {
+    margin-top: 30px;
+    margin-left: 20px;
+    font-weight: 600;
+    font-size: var(--small-font);
+}
+
+.help .addrs li:nth-last-child(1) {
+    margin-left: 10px;
+    color: #A9C7FB;
+    list-style-type: none;
+}
+
+
+.main {
+    width: 68%;
+    height: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    /* background-color: #C5C6C5; */
+}
+
+.headings {
+    max-height: fit-content;
+    padding: 20px 0px;
+    letter-spacing: -.03em;
+    font-size: 56px;
+    font-weight: 500;
+    font-family: 'Google Sans', 'Helvetica Neue', sans-serif !important;
+    margin-bottom: 40px;
+}
+
+.options {
+    width: 100%;
+    height: 220px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 70px;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: #1F1F21;
+    border-radius: 12px;
+    padding: 18px;
+}
+
+
+.container .main .headings .heading1 {
+
+    /** TEXT GRADIENT */
+    color: #82c934;
+    background-image: -webkit-linear-gradient(45deg, #82c934 16%, #b72c5c 70%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+
+.container .main .headings .heading2 {
+    color: #444746;
+}
+
+.box i {
+    float: right;
+    position: relative;
+    bottom: -92px;
+    background-color: #131314;
+    padding: 10px;
+    font-size: 285x;
+    font-weight: 600;
+    border-radius: 50%;
+}
+
+.box:hover {
+    background-color: #444746;
+}
+
+.inputField {
+    width: 70%;
+    margin: 0 auto;
+    position: relative;
+    bottom: -45px;
+    height: 60px;
+    background-color: #1E1F20;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.inputField input {
+    width: 90%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--lt-font);
+}
+
+.inputField i {
+    font-size: 20px;
+    margin: 0 8px;
+}
+
+.container .fHeading {
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    position: relative;
+    bottom: -50px;
+}
