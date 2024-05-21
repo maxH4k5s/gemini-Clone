@@ -6,6 +6,7 @@ This project is a recreation of the Google Gemini UI.
 
 To use this project, simply clone the repository to your local machine:
 
+git clone https://github.com/maxH4k5s/gemini-Clone.git
 
 ## Usage
 
